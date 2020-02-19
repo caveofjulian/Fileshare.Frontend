@@ -1,0 +1,14 @@
+<div class="row top-buffer"></div>
+
+<div>
+  <h1 style="color: white">Testing purpose</h1>
+  <article [hidden]="hideContent">
+    <div>
+    <p>Warning code {{severity}}</p>
+    </div>
+    <div>
+      {{content}}
+    </div>
+  </article>
+  <button (click)="toggle()">Toggle Visibility</button>
+</div>

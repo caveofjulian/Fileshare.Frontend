@@ -1,0 +1,9 @@
+.highlighted {
+    background-color: darkred;
+    color: white;
+}
+
+.transcript {
+    background-color: darkseagreen;
+    color: deepskyblue;
+}

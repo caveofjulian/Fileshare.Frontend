@@ -1,0 +1,9 @@
+.top-buffer { margin-top:100px; }
+.small-buffer { margin-top: 10px;}
+.carousel-inner {
+    resize: both;
+    overflow: auto;
+}
+.white {
+    color: white;
+}

@@ -1,0 +1,10 @@
+<video (timeupdate)="onTimeUpdate($event)" controls #child>
+<source src="{{videoUrl}}" type="video/mp4">
+<!-- <source src="{{}}" type="video/ogg"> -->
+Your browser does not support the video tag.
+</video>
+
+<p style="color: white;">TRANSCRIPT</p>
+<div *ngFor="let sentence of sentences; let i = index">
+    <span class="{{classThingy}}" (click)="toCorrespondingTime(i)">{{sentence}}</span>
+</div>
