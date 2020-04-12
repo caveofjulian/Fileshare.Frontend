@@ -19,7 +19,7 @@ export class AudioplayerComponent implements OnInit {
     name: 'unknown',
     duration: 0,
   };
-
+ 
   constructor(private fileService: FileService) { }
 
   ngOnInit() {
@@ -52,6 +52,6 @@ export class AudioplayerComponent implements OnInit {
   }
 
   stop() {
-    
+    this.fileService.skip(10);
   }
 }

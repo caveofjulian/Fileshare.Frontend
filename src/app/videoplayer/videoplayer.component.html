@@ -6,5 +6,5 @@ Your browser does not support the video tag.
 
 <p style="color: white;">TRANSCRIPT</p>
 <div *ngFor="let sentence of sentences; let i = index">
-    <span class="{{classThingy}}" (click)="toCorrespondingTime(i)">{{sentence}}</span>
+    <span class="{{sentences[i].currentStyle}}" (click)="toCorrespondingTime(i)">{{sentence.content}}</span>
 </div>

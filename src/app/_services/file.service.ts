@@ -11,12 +11,14 @@ export class FileService {
   constructor(private http: HttpClient) { }
 
   stream(id: number) {
-    this.audio.src = this.baseUrl + 'files/' + id;
-    this.audio.load();
+    this.audio.src = "http://localhost:1061/api/v1/playback/test";
     this.audio.play();
     console.log(this.audio.duration);
   }
 
+  skip(seconds) {
+    this.audio.currentTime += seconds;
+  }
   pause() {
     this.audio.pause();
   }
